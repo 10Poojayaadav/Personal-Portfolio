@@ -149,7 +149,7 @@ const Hero = ({ scrollToSection }) => {
         className="min-h-[600px] max-w-[90%] mx-auto flex flex-col md:flex-row items-center"
         data-aos="zoom-in"
       >
-        <div className="w-full md:w-2/3 pt-8 sm:pt-12 sm:p-5">
+        <div className="w-full md:w-2/3 pt-12 sm:pt-12 sm:p-5">
           <div className="max-w-[700px]">
             <div className="border-l-4 border-purple-600 pl-4 md:pl-6">
               <h4 className="text-gray-100 text-lg md:text-xl mb-2">

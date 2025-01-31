@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: 'Lora', serif;
+}
+/* In your main CSS file */
+:root {
+  --font-size-decrease: 5px;
+}

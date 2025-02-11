@@ -26,62 +26,11 @@ const Skills = () => {
       className="bg-gray-800 py-10"
       style={{ backgroundImage: `url(${background})` }}
     >
-      {/* <div
-        className="container mx-auto py-10 px-5 rounded-xl bg-black shadow-2xl"
-        data-aos="fade-left"
-      >
-        <h2 className="text-3xl text-center mb-8 font-bold text-white">
+      <h2 className="text-3xl text-center mb-8 font-bold text-white">
           Skills
         </h2>
-        <div className="rounded-md">
-          <div className="flex flex-wrap justify-center gap-6">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="border border-slate-700 rounded-md p-4 bg-gray-900 w-[150px] h-[150px] flex flex-col justify-center items-center"
-              >
-                <div className="relative w-full h-full">
-                  <svg
-                    className="rotate-[135deg] w-full h-full"
-                    viewBox="0 0 36 36"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      className="stroke-current text-gray-200 dark:text-neutral-700"
-                      strokeWidth="1.5"
-                      strokeDasharray="100 100"
-                      strokeLinecap="round"
-                    ></circle>
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      className="stroke-current text-blue-600 dark:text-blue-500"
-                      strokeWidth="1.5"
-                      strokeDasharray={`${skill.percentage} 100`}
-                      strokeLinecap="round"
-                    ></circle>
-                  </svg>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <span className="text-2xl font-bold text-blue-600 dark:text-blue-500">
-                      {skill.percentage}%
-                    </span>
-                    <span className="text-sm text-blue-600 dark:text-blue-500 block mt-1">
-                      {skill.name}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-10 px-5  rounded-xl bg-black lg:grid-cols-4 gap-6">
+      
         {skills.map((skill, index) => (
           <div
             key={index}

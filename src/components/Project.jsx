@@ -9,6 +9,7 @@ import ProjectImage7 from "../assets/project/p (4).png";
 import ProjectImage8 from "../assets/project/p (5).png";
 import ProjectImage9 from "../assets/project/p (6).png";
 import ProjectImage10 from "../assets/project/p (10).png";
+import ProjectImage11 from "../assets/project/p (11).png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -106,6 +107,17 @@ export const Projects = () => {
       url: "https://play.google.com/store/apps/details?id=com.prominence.chauffer",
     },
   ];
+  const projectsTab4 = [
+    {
+      title: "AI Game Designer Visualizer",
+      description:
+        "Featuring animated reasoning flow, confidence filters, and narration in both text and voice Built with React Tailwind CSS for a fun, interactive, and visual hackathon experience.",
+      imgUrls: [ProjectImage11],
+      skills: "React.js, Redux",
+      url: "https://ai-game-designer.vercel.app/",
+    },
+    
+  ];
 
   const getProjectsForActiveTab = () => {
     switch (activeTab) {
@@ -115,6 +127,8 @@ export const Projects = () => {
         return projectsTab2;
       case 3:
         return projectsTab3;
+      case 4:
+        return projectsTab4;
       default:
         return projectsTab1;
     }
@@ -145,7 +159,7 @@ export const Projects = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mb-10 px-4 flex-wrap gap-4">
-        {["Tab 1", "Tab 2", "Tab 3"].map((tab, index) => (
+        {["Tab 1", "Tab 2", "Tab 3","Tab 4"].map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index + 1)}
